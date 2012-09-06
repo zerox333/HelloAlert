@@ -1,0 +1,368 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		DF40D0FA15F76DB200F16B9D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DF40D0F915F76DB200F16B9D /* Foundation.framework */; };
+		DF40D10515F76DB200F16B9D /* HelloAlert.mm in Sources */ = {isa = PBXBuildFile; fileRef = DF40D10415F76DB200F16B9D /* HelloAlert.mm */; };
+		DF40D11015F76E0B00F16B9D /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DF40D10F15F76E0B00F16B9D /* UIKit.framework */; };
+		DF40D11215F76E1E00F16B9D /* libsubstrate.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = DF40D11115F76E1E00F16B9D /* libsubstrate.dylib */; };
+		DF8001A215F862BF00A6767A /* UIToast.h in Headers */ = {isa = PBXBuildFile; fileRef = DF8001A015F862BF00A6767A /* UIToast.h */; };
+		DF8001A315F862BF00A6767A /* UIToast.m in Sources */ = {isa = PBXBuildFile; fileRef = DF8001A115F862BF00A6767A /* UIToast.m */; };
+		DF8001AB15F8642700A6767A /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DF8001AA15F8642700A6767A /* CoreGraphics.framework */; };
+		DF8001B115F89F1400A6767A /* UIToastWindow.h in Headers */ = {isa = PBXBuildFile; fileRef = DF8001AF15F89F1400A6767A /* UIToastWindow.h */; };
+		DF8001B215F89F1400A6767A /* UIToastWindow.m in Sources */ = {isa = PBXBuildFile; fileRef = DF8001B015F89F1400A6767A /* UIToastWindow.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		DF40D0F915F76DB200F16B9D /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		DF40D0FE15F76DB200F16B9D /* control.txt */ = {isa = PBXFileReference; lastKnownFileType = text; name = control.txt; path = Package/DEBIAN/control.txt; sourceTree = "<group>"; };
+		DF40D0FF15F76DB200F16B9D /* control */ = {isa = PBXFileReference; lastKnownFileType = text; name = control; path = Package/DEBIAN/control; sourceTree = "<group>"; };
+		DF40D10115F76DB200F16B9D /* PackageVersion.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = PackageVersion.plist; sourceTree = "<group>"; };
+		DF40D10215F76DB200F16B9D /* HelloAlert-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "HelloAlert-Prefix.pch"; sourceTree = "<group>"; };
+		DF40D10315F76DB200F16B9D /* HelloAlert.xm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = HelloAlert.xm; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objcpp; };
+		DF40D10415F76DB200F16B9D /* HelloAlert.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = HelloAlert.mm; sourceTree = "<group>"; };
+		DF40D10915F76DB200F16B9D /* HelloAlert.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = HelloAlert.plist; path = Package/Library/MobileSubstrate/DynamicLibraries/HelloAlert.plist; sourceTree = "<group>"; };
+		DF40D10F15F76E0B00F16B9D /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		DF40D11115F76E1E00F16B9D /* libsubstrate.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsubstrate.dylib; path = /opt/iOSOpenDev/lib/libsubstrate.dylib; sourceTree = "<absolute>"; };
+		DF8001A015F862BF00A6767A /* UIToast.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UIToast.h; sourceTree = "<group>"; };
+		DF8001A115F862BF00A6767A /* UIToast.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UIToast.m; sourceTree = "<group>"; };
+		DF8001AA15F8642700A6767A /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		DF8001AF15F89F1400A6767A /* UIToastWindow.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UIToastWindow.h; sourceTree = "<group>"; };
+		DF8001B015F89F1400A6767A /* UIToastWindow.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UIToastWindow.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		DF40D0F415F76DB200F16B9D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DF8001AB15F8642700A6767A /* CoreGraphics.framework in Frameworks */,
+				DF40D11215F76E1E00F16B9D /* libsubstrate.dylib in Frameworks */,
+				DF40D11015F76E0B00F16B9D /* UIKit.framework in Frameworks */,
+				DF40D0FA15F76DB200F16B9D /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		DF40D0EB15F76DB200F16B9D = {
+			isa = PBXGroup;
+			children = (
+				DF40D0FB15F76DB200F16B9D /* HelloAlert */,
+				DF40D0F815F76DB200F16B9D /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		DF40D0F815F76DB200F16B9D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				DF40D11115F76E1E00F16B9D /* libsubstrate.dylib */,
+				DF8001AA15F8642700A6767A /* CoreGraphics.framework */,
+				DF40D10F15F76E0B00F16B9D /* UIKit.framework */,
+				DF40D0F915F76DB200F16B9D /* Foundation.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		DF40D0FB15F76DB200F16B9D /* HelloAlert */ = {
+			isa = PBXGroup;
+			children = (
+				DF8001AF15F89F1400A6767A /* UIToastWindow.h */,
+				DF8001B015F89F1400A6767A /* UIToastWindow.m */,
+				DF8001A015F862BF00A6767A /* UIToast.h */,
+				DF8001A115F862BF00A6767A /* UIToast.m */,
+				DF40D10315F76DB200F16B9D /* HelloAlert.xm */,
+				DF40D10415F76DB200F16B9D /* HelloAlert.mm */,
+				DF40D0FC15F76DB200F16B9D /* Package */,
+				DF40D10015F76DB200F16B9D /* Supporting Files */,
+			);
+			path = HelloAlert;
+			sourceTree = "<group>";
+		};
+		DF40D0FC15F76DB200F16B9D /* Package */ = {
+			isa = PBXGroup;
+			children = (
+				DF40D0FD15F76DB200F16B9D /* DEBIAN */,
+				DF40D10615F76DB200F16B9D /* Library */,
+			);
+			name = Package;
+			sourceTree = "<group>";
+		};
+		DF40D0FD15F76DB200F16B9D /* DEBIAN */ = {
+			isa = PBXGroup;
+			children = (
+				DF40D0FE15F76DB200F16B9D /* control.txt */,
+				DF40D0FF15F76DB200F16B9D /* control */,
+			);
+			name = DEBIAN;
+			sourceTree = "<group>";
+		};
+		DF40D10015F76DB200F16B9D /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				DF40D10115F76DB200F16B9D /* PackageVersion.plist */,
+				DF40D10215F76DB200F16B9D /* HelloAlert-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		DF40D10615F76DB200F16B9D /* Library */ = {
+			isa = PBXGroup;
+			children = (
+				DF40D10715F76DB200F16B9D /* MobileSubstrate */,
+			);
+			name = Library;
+			sourceTree = "<group>";
+		};
+		DF40D10715F76DB200F16B9D /* MobileSubstrate */ = {
+			isa = PBXGroup;
+			children = (
+				DF40D10815F76DB200F16B9D /* DynamicLibraries */,
+			);
+			name = MobileSubstrate;
+			sourceTree = "<group>";
+		};
+		DF40D10815F76DB200F16B9D /* DynamicLibraries */ = {
+			isa = PBXGroup;
+			children = (
+				DF40D10915F76DB200F16B9D /* HelloAlert.plist */,
+			);
+			name = DynamicLibraries;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		DF40D0F515F76DB200F16B9D /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DF8001A215F862BF00A6767A /* UIToast.h in Headers */,
+				DF8001B115F89F1400A6767A /* UIToastWindow.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		DF40D0F715F76DB200F16B9D /* HelloAlert */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DF40D10C15F76DB200F16B9D /* Build configuration list for PBXNativeTarget "HelloAlert" */;
+			buildPhases = (
+				DF40D0F215F76DB200F16B9D /* ShellScript */,
+				DF40D0F315F76DB200F16B9D /* Sources */,
+				DF40D0F415F76DB200F16B9D /* Frameworks */,
+				DF40D0F515F76DB200F16B9D /* Headers */,
+				DF40D0F615F76DB200F16B9D /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = HelloAlert;
+			productName = HelloAlert;
+			productType = "com.apple.product-type.library.dynamic";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		DF40D0ED15F76DB200F16B9D /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0440;
+			};
+			buildConfigurationList = DF40D0F015F76DB200F16B9D /* Build configuration list for PBXProject "HelloAlert" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = DF40D0EB15F76DB200F16B9D;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				DF40D0F715F76DB200F16B9D /* HelloAlert */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		DF40D0F215F76DB200F16B9D /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "/opt/iOSOpenDev/bin/iosod --xcbp-logos";
+		};
+		DF40D0F615F76DB200F16B9D /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "/opt/iOSOpenDev/bin/iosod --xcbp";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		DF40D0F315F76DB200F16B9D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DF40D10515F76DB200F16B9D /* HelloAlert.mm in Sources */,
+				DF8001A315F862BF00A6767A /* UIToast.m in Sources */,
+				DF8001B215F89F1400A6767A /* UIToastWindow.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		DF40D10A15F76DB200F16B9D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				COPY_PHASE_STRIP = YES;
+				EXCLUDED_RECURSIVE_SEARCH_PATH_SUBDIRECTORIES = "*.nib *.lproj *.gch (*) .DS_Store CVS .svn .git .hg *.xcodeproj *.xcode *.pbproj *.pbxproj";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(iOSOpenDevPath)/frameworks/**",
+					"$(SDKROOT)/System/Library/PrivateFrameworks",
+				);
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = "$(iOSOpenDevPath)/include/**";
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				LIBRARY_SEARCH_PATHS = "$(iOSOpenDevPath)/lib/**";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = 1;
+				VALIDATE_PRODUCT = YES;
+				iOSOpenDevPath = /opt/iOSOpenDev;
+			};
+			name = Release;
+		};
+		DF40D10B15F76DB200F16B9D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				COPY_PHASE_STRIP = NO;
+				EXCLUDED_RECURSIVE_SEARCH_PATH_SUBDIRECTORIES = "*.nib *.lproj *.gch (*) .DS_Store CVS .svn .git .hg *.xcodeproj *.xcode *.pbproj *.pbxproj";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(iOSOpenDevPath)/frameworks/**",
+					"$(SDKROOT)/System/Library/PrivateFrameworks",
+				);
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = "$(iOSOpenDevPath)/include/**";
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				LIBRARY_SEARCH_PATHS = "$(iOSOpenDevPath)/lib/**";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = 1;
+				VALIDATE_PRODUCT = NO;
+				iOSOpenDevPath = /opt/iOSOpenDev;
+			};
+			name = Debug;
+		};
+		DF40D10D15F76DB200F16B9D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "HelloAlert/HelloAlert-Prefix.pch";
+				INSTALL_PATH = /Library/MobileSubstrate/DynamicLibraries;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					/opt/iOSOpenDev/lib,
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
+				iOSOpenDevBuildPackageOnAnyBuild = NO;
+				iOSOpenDevCopyOnBuild = NO;
+				iOSOpenDevDevice = 192.168.0.118;
+				iOSOpenDevInstallOnAnyBuild = NO;
+				iOSOpenDevInstallOnProfiling = YES;
+				iOSOpenDevRespringOnInstall = YES;
+				iOSOpenDevUsePackageVersionPList = YES;
+			};
+			name = Release;
+		};
+		DF40D10E15F76DB200F16B9D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "HelloAlert/HelloAlert-Prefix.pch";
+				INSTALL_PATH = /Library/MobileSubstrate/DynamicLibraries;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					/opt/iOSOpenDev/lib,
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
+				iOSOpenDevBuildPackageOnAnyBuild = NO;
+				iOSOpenDevCopyOnBuild = NO;
+				iOSOpenDevDevice = 192.168.0.118;
+				iOSOpenDevInstallOnAnyBuild = NO;
+				iOSOpenDevInstallOnProfiling = YES;
+				iOSOpenDevRespringOnInstall = YES;
+				iOSOpenDevUsePackageVersionPList = YES;
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		DF40D0F015F76DB200F16B9D /* Build configuration list for PBXProject "HelloAlert" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DF40D10A15F76DB200F16B9D /* Release */,
+				DF40D10B15F76DB200F16B9D /* Debug */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DF40D10C15F76DB200F16B9D /* Build configuration list for PBXNativeTarget "HelloAlert" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DF40D10D15F76DB200F16B9D /* Release */,
+				DF40D10E15F76DB200F16B9D /* Debug */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = DF40D0ED15F76DB200F16B9D /* Project object */;
+}
