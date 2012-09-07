@@ -1,7 +1,7 @@
 //#import <SpringBoard/SpringBoard.h>
 #import <SpringBoard/SBFolderIcon.h>
 //#import <SpringBoard/SBApplicationIcon.h>
-#import "UIToast.h"
+#import "UIMyToast.h"
  
 /*%hook SpringBoard
  
@@ -28,8 +28,8 @@
     NSString *appName = [self displayName];
     NSString *message = [NSString stringWithFormat:@"\"%@\" folder has been opened", appName];
     
-    UIToast *toast = [[UIToast alloc] init];
-    [toast show:message Gravity:TOAST_GRAVITY_CENTURE Length:TOAST_LENGTH_LONG];
+    UIMyToast *toast = [[UIMyToast alloc] init];
+    [toast show:message Gravity:TOAST_GRAVITY_CENTURE Length:TOAST_LENGTH_SHORT];
     [toast release];
 }
  
@@ -51,8 +51,8 @@
 //    [alert show];
 //    [alert release];
     
-    UIToast *toast = [[UIToast alloc] init];
-    [toast show:message Gravity:TOAST_GRAVITY_CENTURE Length:TOAST_LENGTH_LONG];
+    UIMyToast *toast = [[UIMyToast alloc] init];
+    [toast show:message Gravity:TOAST_GRAVITY_CENTURE Length:TOAST_LENGTH_SHORT];
     [toast release];
     
     %orig;
