@@ -2,7 +2,7 @@
 
 #import <SpringBoard/SBFolderIcon.h>
 
-#import "UIToast.h"
+#import "UIMyToast.h"
  
 
 
@@ -34,8 +34,8 @@ static void _logos_method$_ungrouped$SBFolderIcon$launch(SBFolderIcon* self, SEL
     NSString *appName = [self displayName];
     NSString *message = [NSString stringWithFormat:@"\"%@\" folder has been opened", appName];
     
-    UIToast *toast = [[UIToast alloc] init];
-    [toast show:message Gravity:TOAST_GRAVITY_CENTURE Length:TOAST_LENGTH_LONG];
+    UIMyToast *toast = [[UIMyToast alloc] init];
+    [toast show:message Gravity:TOAST_GRAVITY_CENTURE Length:TOAST_LENGTH_SHORT];
     [toast release];
 }
  
@@ -57,8 +57,8 @@ static void _logos_method$_ungrouped$SBApplicationIcon$launch(SBApplicationIcon*
 
 
     
-    UIToast *toast = [[UIToast alloc] init];
-    [toast show:message Gravity:TOAST_GRAVITY_CENTURE Length:TOAST_LENGTH_LONG];
+    UIMyToast *toast = [[UIMyToast alloc] init];
+    [toast show:message Gravity:TOAST_GRAVITY_CENTURE Length:TOAST_LENGTH_SHORT];
     [toast release];
     
     _logos_orig$_ungrouped$SBApplicationIcon$launch(self, _cmd);

@@ -11,11 +11,9 @@
 		DF40D10515F76DB200F16B9D /* HelloAlert.mm in Sources */ = {isa = PBXBuildFile; fileRef = DF40D10415F76DB200F16B9D /* HelloAlert.mm */; };
 		DF40D11015F76E0B00F16B9D /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DF40D10F15F76E0B00F16B9D /* UIKit.framework */; };
 		DF40D11215F76E1E00F16B9D /* libsubstrate.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = DF40D11115F76E1E00F16B9D /* libsubstrate.dylib */; };
-		DF8001A215F862BF00A6767A /* UIToast.h in Headers */ = {isa = PBXBuildFile; fileRef = DF8001A015F862BF00A6767A /* UIToast.h */; };
-		DF8001A315F862BF00A6767A /* UIToast.m in Sources */ = {isa = PBXBuildFile; fileRef = DF8001A115F862BF00A6767A /* UIToast.m */; };
 		DF8001AB15F8642700A6767A /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DF8001AA15F8642700A6767A /* CoreGraphics.framework */; };
-		DF8001B115F89F1400A6767A /* UIToastWindow.h in Headers */ = {isa = PBXBuildFile; fileRef = DF8001AF15F89F1400A6767A /* UIToastWindow.h */; };
-		DF8001B215F89F1400A6767A /* UIToastWindow.m in Sources */ = {isa = PBXBuildFile; fileRef = DF8001B015F89F1400A6767A /* UIToastWindow.m */; };
+		DFCC903E15F982B000112CDB /* UIMyToast.h in Headers */ = {isa = PBXBuildFile; fileRef = DFCC903C15F982B000112CDB /* UIMyToast.h */; };
+		DFCC903F15F982B000112CDB /* UIMyToast.m in Sources */ = {isa = PBXBuildFile; fileRef = DFCC903D15F982B000112CDB /* UIMyToast.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,11 +27,9 @@
 		DF40D10915F76DB200F16B9D /* HelloAlert.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = HelloAlert.plist; path = Package/Library/MobileSubstrate/DynamicLibraries/HelloAlert.plist; sourceTree = "<group>"; };
 		DF40D10F15F76E0B00F16B9D /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		DF40D11115F76E1E00F16B9D /* libsubstrate.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsubstrate.dylib; path = /opt/iOSOpenDev/lib/libsubstrate.dylib; sourceTree = "<absolute>"; };
-		DF8001A015F862BF00A6767A /* UIToast.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UIToast.h; sourceTree = "<group>"; };
-		DF8001A115F862BF00A6767A /* UIToast.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UIToast.m; sourceTree = "<group>"; };
 		DF8001AA15F8642700A6767A /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
-		DF8001AF15F89F1400A6767A /* UIToastWindow.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UIToastWindow.h; sourceTree = "<group>"; };
-		DF8001B015F89F1400A6767A /* UIToastWindow.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UIToastWindow.m; sourceTree = "<group>"; };
+		DFCC903C15F982B000112CDB /* UIMyToast.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UIMyToast.h; sourceTree = "<group>"; };
+		DFCC903D15F982B000112CDB /* UIMyToast.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UIMyToast.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -73,10 +69,8 @@
 		DF40D0FB15F76DB200F16B9D /* HelloAlert */ = {
 			isa = PBXGroup;
 			children = (
-				DF8001AF15F89F1400A6767A /* UIToastWindow.h */,
-				DF8001B015F89F1400A6767A /* UIToastWindow.m */,
-				DF8001A015F862BF00A6767A /* UIToast.h */,
-				DF8001A115F862BF00A6767A /* UIToast.m */,
+				DFCC903C15F982B000112CDB /* UIMyToast.h */,
+				DFCC903D15F982B000112CDB /* UIMyToast.m */,
 				DF40D10315F76DB200F16B9D /* HelloAlert.xm */,
 				DF40D10415F76DB200F16B9D /* HelloAlert.mm */,
 				DF40D0FC15F76DB200F16B9D /* Package */,
@@ -143,8 +137,7 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DF8001A215F862BF00A6767A /* UIToast.h in Headers */,
-				DF8001B115F89F1400A6767A /* UIToastWindow.h in Headers */,
+				DFCC903E15F982B000112CDB /* UIMyToast.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -228,8 +221,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				DF40D10515F76DB200F16B9D /* HelloAlert.mm in Sources */,
-				DF8001A315F862BF00A6767A /* UIToast.m in Sources */,
-				DF8001B215F89F1400A6767A /* UIToastWindow.m in Sources */,
+				DFCC903F15F982B000112CDB /* UIMyToast.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
