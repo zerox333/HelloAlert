@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		ABBC272515FB200C00DF8880 /* NSProperty.h in Headers */ = {isa = PBXBuildFile; fileRef = ABBC272315FB200C00DF8880 /* NSProperty.h */; };
+		ABBC272615FB200C00DF8880 /* NSProperty.m in Sources */ = {isa = PBXBuildFile; fileRef = ABBC272415FB200C00DF8880 /* NSProperty.m */; };
 		DF40D0FA15F76DB200F16B9D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DF40D0F915F76DB200F16B9D /* Foundation.framework */; };
 		DF40D10515F76DB200F16B9D /* HelloAlert.mm in Sources */ = {isa = PBXBuildFile; fileRef = DF40D10415F76DB200F16B9D /* HelloAlert.mm */; };
 		DF40D11015F76E0B00F16B9D /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DF40D10F15F76E0B00F16B9D /* UIKit.framework */; };
@@ -17,6 +19,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		ABBC272315FB200C00DF8880 /* NSProperty.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NSProperty.h; sourceTree = "<group>"; };
+		ABBC272415FB200C00DF8880 /* NSProperty.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NSProperty.m; sourceTree = "<group>"; };
 		DF40D0F915F76DB200F16B9D /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		DF40D0FE15F76DB200F16B9D /* control.txt */ = {isa = PBXFileReference; lastKnownFileType = text; name = control.txt; path = Package/DEBIAN/control.txt; sourceTree = "<group>"; };
 		DF40D0FF15F76DB200F16B9D /* control */ = {isa = PBXFileReference; lastKnownFileType = text; name = control; path = Package/DEBIAN/control; sourceTree = "<group>"; };
@@ -69,6 +73,8 @@
 		DF40D0FB15F76DB200F16B9D /* HelloAlert */ = {
 			isa = PBXGroup;
 			children = (
+				ABBC272315FB200C00DF8880 /* NSProperty.h */,
+				ABBC272415FB200C00DF8880 /* NSProperty.m */,
 				DFCC903C15F982B000112CDB /* UIMyToast.h */,
 				DFCC903D15F982B000112CDB /* UIMyToast.m */,
 				DF40D10315F76DB200F16B9D /* HelloAlert.xm */,
@@ -138,6 +144,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				DFCC903E15F982B000112CDB /* UIMyToast.h in Headers */,
+				ABBC272515FB200C00DF8880 /* NSProperty.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -222,6 +229,7 @@
 			files = (
 				DF40D10515F76DB200F16B9D /* HelloAlert.mm in Sources */,
 				DFCC903F15F982B000112CDB /* UIMyToast.m in Sources */,
+				ABBC272615FB200C00DF8880 /* NSProperty.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -301,7 +309,7 @@
 				TARGETED_DEVICE_FAMILY = 1;
 				iOSOpenDevBuildPackageOnAnyBuild = NO;
 				iOSOpenDevCopyOnBuild = NO;
-				iOSOpenDevDevice = 192.168.0.118;
+				iOSOpenDevDevice = "";
 				iOSOpenDevInstallOnAnyBuild = NO;
 				iOSOpenDevInstallOnProfiling = YES;
 				iOSOpenDevRespringOnInstall = YES;
@@ -325,7 +333,7 @@
 				TARGETED_DEVICE_FAMILY = 1;
 				iOSOpenDevBuildPackageOnAnyBuild = NO;
 				iOSOpenDevCopyOnBuild = NO;
-				iOSOpenDevDevice = 192.168.0.118;
+				iOSOpenDevDevice = "";
 				iOSOpenDevInstallOnAnyBuild = NO;
 				iOSOpenDevInstallOnProfiling = YES;
 				iOSOpenDevRespringOnInstall = YES;
